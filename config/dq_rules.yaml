@@ -1,0 +1,72 @@
+# Data-quality rules applied in the validate step.
+# Actions:
+#   flag        – event is sent; flag name added to lantern_dq_flags
+#   fix_and_flag – value repaired in the canonical finding (never in data/raw); flag added
+#   quarantine  – event NOT sent; written to runs/<run_id>/quarantine.jsonl with reason code
+# Reconciliation: input_count == sent_count + quarantined_count
+
+version: dq_v1
+
+identity:
+  host_key: host.host_id          # host identity is host_id, NOT IP (IPs vary per host, even within one collection; cause unknown)
+  event_key: event_id
+
+rules:
+  - id: duplicate_id
+    description: Same event_id appears more than once with different content.
+    check: duplicate_event_id_different_content
+    action: flag
+    flag: duplicate_id
+    note: Identical duplicates may be collapsed; differing duplicates are both sent and flagged.
+
+  - id: missing_host
+    description: host object or host.host_id/hostname missing — finding cannot be attributed.
+    check: missing(host)
+    action: quarantine
+    reason_code: missing_host
+
+  - id: rule_name_missing
+    description: rule.name missing or null.
+    check: missing(rule.name)
+    action: flag
+    flag: rule_name_missing
+    note: Mapper substitutes signature="unknown".
+
+  - id: timestamp_estimated
+    description: timestamp is null.
+    check: is_null(timestamp)
+    action: fix_and_flag
+    fix: use collection.completed_at
+    flag: timestamp_estimated
+
+  - id: size_type_coerced
+    description: file.size is not an integer (e.g. string "8452").
+    check: not_int(file.size)
+    action: fix_and_flag
+    fix: cast to int
+    flag: size_type_coerced
+
+  - id: unknown_status
+    description: disposition.status not in the documented set.
+    check: not_in(disposition.status, [UNREVIEWED, BENIGN, MALICIOUS, SUPPRESSED])
+    action: flag
+    flag: unknown_status
+    note: Value passed through unchanged.
+
+  - id: no_patterns
+    description: matched_patterns is empty.
+    check: empty(matched_patterns)
+    action: flag
+    flag: no_patterns
+
+  - id: hash_size_conflict
+    description: Same file.sha256 seen with different file.size across events.
+    check: cross_event_conflict(key=file.sha256, field=file.size)
+    action: flag
+    flag: hash_size_conflict
+
+  - id: order_violation
+    description: Documented ordering file.mtime <= timestamp <= collection.completed_at is broken.
+    check: ordering([file.mtime, timestamp, collection.completed_at])
+    action: flag
+    flag: order_violation

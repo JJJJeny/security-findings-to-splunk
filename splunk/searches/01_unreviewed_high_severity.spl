@@ -1,0 +1,15 @@
+```
+Analyst question: Which findings still need a human decision, worst first?
+Shows unreviewed findings with severity high or critical, newest first.
+Note: uses the latest disposition per finding, since a disposition changes over time.
+Grouped by lantern_finding_key, not lantern_event_id: event_id is not unique (docs/BUILD_LOG.md B2).
+```
+index=lantern sourcetype="lantern:finding"
+| stats latest(lantern_disposition_status) AS status latest(_time) AS _time
+        values(severity) AS severity max(severity_id) AS severity_id
+        values(dest) AS dest values(signature) AS signature values(file_path) AS file_path values(file_hash) AS file_hash
+        values(lantern_event_id) AS lantern_event_id
+        BY lantern_finding_key
+| search status="UNREVIEWED" severity IN ("critical","high")
+| sort - severity_id - _time
+| table _time lantern_event_id lantern_finding_key severity severity_id dest signature file_path file_hash

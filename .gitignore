@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Large video files (optional)
+
+# Note: runs/ is intentionally tracked for traceability.
+
+# Local notes, not published
+docs/PLAN.md
+docs/scenario1-video-script.md
+scenario2/

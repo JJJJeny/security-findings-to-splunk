@@ -1,0 +1,34 @@
+# Local single-instance Splunk Enterprise for the prototype.
+# Usage: docker compose -f splunk/docker-compose.yml up -d
+# Variables come from ../.env (copy .env.example to .env first).
+services:
+  splunk:
+    image: splunk/splunk:latest   # TODO: pin a specific version tag for reproducibility
+    # The official image is published for linux/amd64 only. On Apple Silicon Macs it
+    # runs under emulation; Docker requires the platform to be named explicitly.
+    # Source: https://community.splunk.com/t5/Splunk-Enterprise/Splunk-Web-on-Docker-fails-to-start-using-an-M1-Mac-on-Monterey/m-p/581178
+    # See docs/BUILD_LOG.md B11 / O8.
+    platform: linux/amd64
+    container_name: lantern-splunk
+    # SPLUNK_PASSWORD and SPLUNK_HEC_TOKEN are injected from ../.env via env_file.
+    # (Not repeated under `environment:` with ${...}: with `-f splunk/docker-compose.yml`
+    # Compose interpolates from splunk/.env, which would silently override them with blanks.)
+    env_file:
+      - ../.env
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      # Required for 10.x images: "Starting in 10.x image versions of Splunk Enterprise
+      # and Splunk Universal Forwarder, license acceptance requires an additional
+      # SPLUNK_GENERAL_TERMS argument" (accepts the current Splunk General Terms).
+      # Source: https://github.com/splunk/docker-splunk (README Quickstart), checked 2026-11-07.
+      SPLUNK_GENERAL_TERMS: --accept-sgt-current-at-splunk-com
+    ports:
+      - "8000:8000"   # Splunk Web
+      - "8088:8088"   # HTTP Event Collector
+    volumes:
+      - splunk-var:/opt/splunk/var
+      - splunk-etc:/opt/splunk/etc
+
+volumes:
+  splunk-var:
+  splunk-etc:

@@ -1,0 +1,12 @@
+```
+Analyst question: What is the current decision on each finding?
+A disposition changes over the life of a finding; the rest of the event does not.
+Returns the latest disposition per lantern_finding_key (by disposition updated_at, then _time).
+Keyed on lantern_finding_key, not lantern_event_id: event_id is not unique in the export (see docs/BUILD_LOG.md B2).
+```
+index=lantern sourcetype="lantern:finding"
+| eval disp_time=coalesce(strptime(lantern_disposition_updated_at, "%Y-%m-%dT%H:%M:%SZ"), _time)
+| sort 0 - disp_time
+| dedup lantern_finding_key
+| table lantern_finding_key lantern_event_id dest signature lantern_disposition_status lantern_disposition_analyst lantern_disposition_comment lantern_disposition_updated_at
+| sort lantern_disposition_status lantern_event_id

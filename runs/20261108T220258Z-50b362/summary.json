@@ -1,0 +1,48 @@
+{
+  "counts": {
+    "failed": 0,
+    "flagged_events": 34,
+    "input": 200,
+    "quarantined": 1,
+    "sent": 199
+  },
+  "delivery": {
+    "endpoint": "https://prd-p-amlnj.splunkcloud.com:8088/services/collector/event",
+    "errors": [],
+    "mode": "splunk_hec",
+    "verify_tls": false
+  },
+  "dq_rules_version": "dq_v1",
+  "dry_run": false,
+  "finished_at": "2026-11-08T22:02:59.527505+00:00",
+  "flag_counts": {
+    "duplicate_id": 4,
+    "hash_size_conflict": 25,
+    "no_patterns": 1,
+    "rule_name_missing": 1,
+    "size_type_coerced": 1,
+    "timestamp_estimated": 1,
+    "unknown_status": 1
+  },
+  "input": {
+    "path": "data/raw/events.json",
+    "sha256": "c1a83face6d05f5cc7c8189ab315207acbe90656e2a84e6b9d2993f1f6b7e6f7"
+  },
+  "mapping_version": "splunk_cim_v1",
+  "quarantine_reasons": {
+    "missing_host": 1
+  },
+  "reconciliation": {
+    "balanced": true,
+    "rule": "input == sent + failed + quarantined"
+  },
+  "run_id": "20261108T220258Z-50b362",
+  "severity_counts": {
+    "critical": 49,
+    "high": 75,
+    "low": 25,
+    "medium": 50
+  },
+  "started_at": "2026-11-08T22:02:58.348990+00:00",
+  "tool_version": "0.1.0"
+}

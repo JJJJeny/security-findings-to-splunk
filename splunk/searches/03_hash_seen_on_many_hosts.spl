@@ -1,0 +1,12 @@
+```
+Analyst question: Is this file isolated to one host, or spread across the environment?
+Counts distinct hosts per file hash. Host identity uses dest (hostname) and
+lantern_host_id; IPs are not used because they change even within one collection (cause unknown; see README, Fields that could not be cleanly mapped).
+Pivot example: file_hash=dc7f6660639367ebfabb5d3a2d5276f3460a534a4a98e2133fc8acae93f3f144 (wldp.dll)
+```
+index=lantern sourcetype="lantern:finding"
+| stats dc(dest) AS host_count dc(lantern_host_id) AS host_id_count values(dest) AS hosts
+        values(file_name) AS file_names values(signature) AS signatures max(severity_id) AS max_severity
+        BY file_hash
+| where host_count > 1
+| sort - host_count

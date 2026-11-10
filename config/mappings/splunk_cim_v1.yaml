@@ -1,0 +1,116 @@
+# Lantern finding → Splunk CIM (Malware data model, Malware_Attacks dataset)
+#
+# This file is a design artifact: mapping lives here, not in code.
+# Fit legend (see comment on each field):
+#   clean       – direct 1:1 semantic match with a CIM field
+#   transform   – matches a CIM field after a deterministic transformation
+#   loose       – mapped to the closest CIM field, but semantics differ
+#   assumed     – value is an assumption about Lantern behaviour, not in the data
+#   no_cim_home – no CIM equivalent; kept as a custom field with the lantern_ prefix
+#
+# Source paths refer to the canonical (normalized) finding, which mirrors the
+# Lantern export structure described in data/raw/SCHEMA.md.
+
+mapping_version: splunk_cim_v1
+target: splunk_cim_malware        # CIM data model: Malware, dataset: Malware_Attacks
+
+splunk:
+  sourcetype: "lantern:finding"
+  index: lantern
+  source: "lantern:export"
+
+event_time:
+  source: timestamp               # when the match was produced
+  fallback: collection.completed_at
+  fallback_flag: timestamp_estimated
+
+fields:
+  # --- CIM fields -----------------------------------------------------------
+  - source: host.hostname
+    target: dest
+    fit: clean
+
+  - source: rule.name
+    target: signature
+    fit: clean
+    on_missing:
+      value: "unknown"
+      flag: rule_name_missing
+
+  - source: rule.namespace
+    target: category
+    fit: loose                    # judgment call: namespace (e.g. "webshell") used as malware category
+
+  - source: file.path
+    target: file_path
+    fit: clean
+
+  - source: file.path
+    target: file_name
+    fit: transform
+    transform: basename           # split on both "/" and "\\" (Linux and Windows paths)
+
+  - source: file.sha256
+    target: file_hash
+    fit: clean
+
+  - source: file.owner
+    target: user
+    fit: loose                    # file owner is NOT the acting user who wrote/ran the file
+
+  - source: severity
+    target: severity
+    fit: transform
+    transform: severity_bucket
+    buckets:                      # PROPOSED thresholds – to validate with Lantern content team
+      - {min: 90, max: 100, value: critical}
+      - {min: 70, max: 89,  value: high}
+      - {min: 40, max: 69,  value: medium}
+      - {min: 1,  max: 39,  value: low}
+      - {min: 0,  max: 0,   value: informational}
+
+  - source: severity
+    target: severity_id
+    fit: transform                # raw 0–100 value kept for sorting / exact thresholds
+
+  # --- Constants ------------------------------------------------------------
+  - constant: "Lantern"
+    target: vendor_product
+    fit: clean
+
+  - constant: "allowed"
+    target: action
+    fit: assumed                  # assumption: Lantern detects, it does not block or quarantine
+
+  # --- No CIM home: custom lantern_* fields -----------------------------------
+  - {source: event_id,                  target: lantern_event_id,               fit: no_cim_home}
+  - {source: host.host_id,              target: lantern_host_id,                fit: no_cim_home}  # stable host identity
+  - {source: host.ip,                   target: lantern_ip,                     fit: no_cim_home}  # varies per host, even within one collection; cause unknown, raise with engineering; not identity
+  - {source: host.os,                   target: lantern_os,                     fit: no_cim_home}
+  - {source: host.agent_version,        target: lantern_agent_version,          fit: no_cim_home}
+  - {source: rule.version,              target: lantern_rule_version,           fit: no_cim_home}
+  - {source: rule.author,               target: lantern_rule_author,            fit: no_cim_home}
+  - {source: file.size,                 target: lantern_file_size,              fit: no_cim_home, cast: int}
+  - {source: file.mtime,                target: lantern_file_mtime,             fit: no_cim_home}
+  - {source: collection.collection_id,  target: lantern_collection_id,          fit: no_cim_home}
+  - {source: collection.job_name,       target: lantern_collection_job_name,    fit: no_cim_home}
+  - {source: collection.requested_by,   target: lantern_collection_requested_by, fit: no_cim_home}
+  - {source: collection.completed_at,   target: lantern_collection_completed_at, fit: no_cim_home}
+
+  - source: matched_patterns
+    target: lantern_patterns
+    fit: no_cim_home
+    transform: multivalue
+    format: "{pattern_id}:{offset}"   # e.g. ["p1:4096", "p2:20488"]
+
+  - {source: disposition.status,        target: lantern_disposition_status,     fit: no_cim_home}
+  - {source: disposition.analyst,       target: lantern_disposition_analyst,    fit: no_cim_home}
+  - {source: disposition.comment,       target: lantern_disposition_comment,    fit: no_cim_home}
+  - {source: disposition.updated_at,    target: lantern_disposition_updated_at, fit: no_cim_home}
+
+# Fields added by the pipeline for traceability (not from Lantern)
+pipeline_fields:
+  - lantern_run_id
+  - lantern_mapping_version
+  - lantern_dq_flags              # multivalue list of data-quality flags for this event
+  - lantern_finding_key           # stable composite key (event_id + host_id + collection_id); event_id alone is not unique, see docs/BUILD_LOG.md B2

@@ -1,0 +1,200 @@
+"lantern_finding_key","lantern_event_id",dest,signature,"lantern_disposition_status","lantern_disposition_analyst","lantern_disposition_comment","lantern_disposition_updated_at"
+"evt-00002|37548fa62f92|col-00418","evt-00002","wkstn-002.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T15:57:40Z"
+"evt-00006|dce9cf403e77|col-00418","evt-00006","srv-lin-06.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T17:32:28Z"
+"evt-00010|684ab7b9d023|col-00418","evt-00010","wkstn-014.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T13:15:31Z"
+"evt-00014|2152b60766a3|col-00418","evt-00014","srv-lin-14.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T04:31:39Z"
+"evt-00022|124e0cdc76ea|col-00418","evt-00022","srv-lin-08.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T21:58:35Z"
+"evt-00026|fa4797040a80|col-00418","evt-00026","wkstn-011.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T10:26:22Z"
+"evt-00030|c1a0c594c12a|col-00418","evt-00030","srv-lin-02.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T10:34:14Z"
+"evt-00034|4cfec27ea514|col-00418","evt-00034","wkstn-023.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T15:31:50Z"
+"evt-00038|481cd7f20d92|col-00418","evt-00038","srv-lin-10.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T20:57:17Z"
+"evt-00042|ed64939b836a|col-00418","evt-00042","wkstn-008.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T06:23:42Z"
+"evt-00046|e2fe4941f6ac|col-00418","evt-00046","srv-lin-04.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T00:36:09Z"
+"evt-00050|262d58bd6d00|col-00418","evt-00050","wkstn-020.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T16:05:05Z"
+"evt-00054|f90772af0ec9|col-00418","evt-00054","srv-lin-12.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T01:08:16Z"
+"evt-00058|09532417d3d6|col-00418","evt-00058","wkstn-005.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T13:30:11Z"
+"evt-00062|dce9cf403e77|col-00418","evt-00062","srv-lin-06.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T16:23:18Z"
+"evt-00066|493c480c4c90|col-00418","evt-00066","wkstn-017.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T22:17:37Z"
+"evt-00070|2152b60766a3|col-00418","evt-00070","srv-lin-14.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T06:44:18Z"
+"evt-00074|37548fa62f92|col-00418","evt-00074","wkstn-002.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T04:30:51Z"
+"evt-00078|124e0cdc76ea|col-00418","evt-00078","srv-lin-08.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T16:25:15Z"
+"evt-00082|684ab7b9d023|col-00418","evt-00082","wkstn-014.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T05:47:56Z"
+"evt-00086|c1a0c594c12a|col-00418","evt-00086","srv-lin-02.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T22:24:11Z"
+"evt-00090|f640c51231fa|col-00418","evt-00090","wkstn-026.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T16:22:12Z"
+"evt-00094|481cd7f20d92|col-00418","evt-00094","srv-lin-10.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T15:48:50Z"
+"evt-00098|fa4797040a80|col-00418","evt-00098","wkstn-011.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T00:41:46Z"
+"evt-00102|e2fe4941f6ac|col-00418","evt-00102","srv-lin-04.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T21:02:30Z"
+"evt-00106|4cfec27ea514|col-00418","evt-00106","wkstn-023.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T20:07:16Z"
+"evt-00110|f90772af0ec9|col-00418","evt-00110","srv-lin-12.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T11:59:43Z"
+"evt-00114|ed64939b836a|col-00418","evt-00114","wkstn-008.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T09:17:42Z"
+"evt-00118|dce9cf403e77|col-00418","evt-00118","srv-lin-06.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T07:09:50Z"
+"evt-00122|262d58bd6d00|col-00418","evt-00122","wkstn-020.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T20:11:36Z"
+"evt-00126|2152b60766a3|col-00418","evt-00126","srv-lin-14.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T01:11:48Z"
+"evt-00130|09532417d3d6|col-00418","evt-00130","wkstn-005.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T08:37:04Z"
+"evt-00134|124e0cdc76ea|col-00418","evt-00134","srv-lin-08.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T06:32:24Z"
+"evt-00138|493c480c4c90|col-00418","evt-00138","wkstn-017.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T18:16:06Z"
+"evt-00142|c1a0c594c12a|col-00418","evt-00142","srv-lin-02.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T07:46:25Z"
+"evt-00146|37548fa62f92|col-00418","evt-00146","wkstn-002.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T01:20:22Z"
+"evt-00150|481cd7f20d92|col-00418","evt-00150","srv-lin-10.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T06:00:18Z"
+"evt-00154|684ab7b9d023|col-00418","evt-00154","wkstn-014.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-18T18:16:43Z"
+"evt-00158|e2fe4941f6ac|col-00418","evt-00158","srv-lin-04.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T02:49:41Z"
+"evt-00162|f640c51231fa|col-00418","evt-00162","wkstn-026.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T15:58:25Z"
+"evt-00166|f90772af0ec9|col-00418","evt-00166","srv-lin-12.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T11:51:18Z"
+"evt-00170|fa4797040a80|col-00418","evt-00170","wkstn-011.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T01:28:16Z"
+"evt-00174|dce9cf403e77|col-00418","evt-00174","srv-lin-06.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T08:24:39Z"
+"evt-00178|4cfec27ea514|col-00418","evt-00178","wkstn-023.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T07:08:11Z"
+"evt-00182|2152b60766a3|col-00418","evt-00182","srv-lin-14.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T02:07:57Z"
+"evt-00186|ed64939b836a|col-00418","evt-00186","wkstn-008.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T07:35:39Z"
+"evt-00190|124e0cdc76ea|col-00418","evt-00190","srv-lin-08.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-20T12:55:13Z"
+"evt-00194|262d58bd6d00|col-00418","evt-00194","wkstn-020.corp.example","C2_Config_Block",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T15:35:34Z"
+"evt-00198|c1a0c594c12a|col-00418","evt-00198","srv-lin-02.corp.example","Backdoor_Generic_Strings",BENIGN,nvirtanen,"known good, matches the vendor's own signature store","2026-06-19T01:29:35Z"
+"evt-00003|fe2b8e6b2e67|col-00421","evt-00003","wkstn-004.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T12:35:34Z"
+"evt-00007|31eadac8fb0b|col-00421","evt-00007","wkstn-010.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T02:25:19Z"
+"evt-00011|5f9eff29f1c3|col-00421","evt-00011","wkstn-016.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T01:03:11Z"
+"evt-00015|08ac168edac4|col-00421","evt-00015","wkstn-022.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T09:41:46Z"
+"evt-00019|57bcde2287dd|col-00421","evt-00019","wkstn-001.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T15:24:47Z"
+"evt-00023|e0fc5b179f58|col-00421","evt-00023","wkstn-007.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T22:05:22Z"
+"evt-00027|feb0082b14f3|col-00421","evt-00027","wkstn-013.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T21:01:29Z"
+"evt-00031|07cddd9309f6|col-00421","evt-00031","wkstn-019.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T07:54:55Z"
+"evt-00035|cf331eb99ac2|col-00421","evt-00035","wkstn-025.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T03:31:10Z"
+"evt-00039|fe2b8e6b2e67|col-00421","evt-00039","wkstn-004.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T01:42:13Z"
+"evt-00043|31eadac8fb0b|col-00421","evt-00043","wkstn-010.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T02:58:45Z"
+"evt-00047|5f9eff29f1c3|col-00421","evt-00047","wkstn-016.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T18:06:43Z"
+"evt-00051|08ac168edac4|col-00421","evt-00051","wkstn-022.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T02:12:12Z"
+"evt-00055|57bcde2287dd|col-00421","evt-00055","wkstn-001.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T21:41:42Z"
+"evt-00059|e0fc5b179f58|col-00421","evt-00059","wkstn-007.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T08:53:14Z"
+"evt-00063|feb0082b14f3|col-00421","evt-00063","wkstn-013.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T02:23:47Z"
+"evt-00067|07cddd9309f6|col-00421","evt-00067","wkstn-019.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T06:14:39Z"
+"evt-00071|cf331eb99ac2|col-00421","evt-00071","wkstn-025.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T08:21:48Z"
+"evt-00075|fe2b8e6b2e67|col-00421","evt-00075","wkstn-004.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T22:07:33Z"
+"evt-00079|31eadac8fb0b|col-00421","evt-00079","wkstn-010.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T09:18:04Z"
+"evt-00083|5f9eff29f1c3|col-00421","evt-00083","wkstn-016.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T09:33:48Z"
+"evt-00087|08ac168edac4|col-00421","evt-00087","wkstn-022.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T12:26:56Z"
+"evt-00091|57bcde2287dd|col-00421","evt-00091","wkstn-001.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T01:14:55Z"
+"evt-00095|e0fc5b179f58|col-00421","evt-00095","wkstn-007.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T22:49:39Z"
+"evt-00099|feb0082b14f3|col-00421","evt-00099","wkstn-013.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T14:36:38Z"
+"evt-00103|07cddd9309f6|col-00421","evt-00103","wkstn-019.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T23:16:50Z"
+"evt-00107|cf331eb99ac2|col-00421","evt-00107","wkstn-025.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T18:47:08Z"
+"evt-00111|fe2b8e6b2e67|col-00421","evt-00111","wkstn-004.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T04:38:02Z"
+"evt-00115|31eadac8fb0b|col-00421","evt-00115","wkstn-010.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T20:45:59Z"
+"evt-00119|5f9eff29f1c3|col-00421","evt-00119","wkstn-016.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T18:52:25Z"
+"evt-00123|08ac168edac4|col-00421","evt-00123","wkstn-022.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T10:50:13Z"
+"evt-00127|57bcde2287dd|col-00421","evt-00127","wkstn-001.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T00:31:06Z"
+"evt-00131|e0fc5b179f58|col-00421","evt-00131","wkstn-007.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T03:51:56Z"
+"evt-00135|feb0082b14f3|col-00421","evt-00135","wkstn-013.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T23:20:34Z"
+"evt-00139|07cddd9309f6|col-00421","evt-00139","wkstn-019.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T14:34:00Z"
+"evt-00143|cf331eb99ac2|col-00421","evt-00143","wkstn-025.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T03:40:19Z"
+"evt-00147|fe2b8e6b2e67|col-00421","evt-00147","wkstn-004.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T14:13:38Z"
+"evt-00151|31eadac8fb0b|col-00421","evt-00151","wkstn-010.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T08:49:09Z"
+"evt-00155|5f9eff29f1c3|col-00421","evt-00155","wkstn-016.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T09:40:36Z"
+"evt-00159|08ac168edac4|col-00421","evt-00159","wkstn-022.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T04:09:15Z"
+"evt-00163|57bcde2287dd|col-00421","evt-00163","wkstn-001.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T12:20:15Z"
+"evt-00167|e0fc5b179f58|col-00421","evt-00167","wkstn-007.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T17:06:10Z"
+"evt-00171|feb0082b14f3|col-00421","evt-00171","wkstn-013.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T03:16:25Z"
+"evt-00175|07cddd9309f6|col-00421","evt-00175","wkstn-019.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T21:49:12Z"
+"evt-00179|cf331eb99ac2|col-00421","evt-00179","wkstn-025.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-24T03:10:09Z"
+"evt-00183|fe2b8e6b2e67|col-00421","evt-00183","wkstn-004.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T19:37:57Z"
+"evt-00187|31eadac8fb0b|col-00421","evt-00187","wkstn-010.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T05:09:50Z"
+"evt-00191|5f9eff29f1c3|col-00421","evt-00191","wkstn-016.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-22T10:53:41Z"
+"evt-00195|08ac168edac4|col-00421","evt-00195","wkstn-022.corp.example","Credential_Dumper_Strings",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T17:28:04Z"
+"evt-00199|57bcde2287dd|col-00421","evt-00199","wkstn-001.corp.example","Reflective_Loader",MALICIOUS,nvirtanen,"confirmed, host isolated and reimaged","2026-06-23T19:02:37Z"
+"evt-00004|09532417d3d6|col-00426","evt-00004","wkstn-005.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T10:52:52Z"
+"evt-00008|ea7176dcff00|col-00426","evt-00008","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T09:28:23Z"
+"evt-00012|493c480c4c90|col-00426","evt-00012","wkstn-017.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T20:25:43Z"
+"evt-00016|ea7176dcff00|col-00426","evt-00016","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T03:49:08Z"
+"evt-00020|37548fa62f92|col-00426","evt-00020","wkstn-002.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T13:59:25Z"
+"evt-00024|ea7176dcff00|col-00426","evt-00024","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T05:58:33Z"
+"evt-00028|684ab7b9d023|col-00426","evt-00028","wkstn-014.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T08:36:44Z"
+"evt-00032|ea7176dcff00|col-00426","evt-00032","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T20:35:57Z"
+"evt-00036|f640c51231fa|col-00426","evt-00036","wkstn-026.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T19:31:40Z"
+"evt-00040|ea7176dcff00|col-00426","evt-00040","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T08:55:07Z"
+"evt-00044|fa4797040a80|col-00426","evt-00044","wkstn-011.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T17:37:50Z"
+"evt-00045|ea7176dcff00|col-00426","evt-00045","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T21:54:34Z"
+"evt-00048|ea7176dcff00|col-00426","evt-00048","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T03:50:35Z"
+"evt-00052|4cfec27ea514|col-00426","evt-00052","wkstn-023.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T16:18:08Z"
+"evt-00056|ea7176dcff00|col-00426","evt-00056","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T08:13:59Z"
+"evt-00060|ed64939b836a|col-00426","evt-00060","wkstn-008.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T06:04:54Z"
+"evt-00064|ea7176dcff00|col-00426","evt-00064","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T06:23:14Z"
+"evt-00068|262d58bd6d00|col-00426","evt-00068","wkstn-020.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T05:32:45Z"
+"evt-00072|ea7176dcff00|col-00426","evt-00072","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T04:32:08Z"
+"evt-00076|09532417d3d6|col-00426","evt-00076","wkstn-005.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T01:05:47Z"
+"evt-00080|ea7176dcff00|col-00426","evt-00080","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T04:50:16Z"
+"evt-00084|493c480c4c90|col-00426","evt-00084","wkstn-017.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T17:56:56Z"
+"evt-00088|ea7176dcff00|col-00426","evt-00088","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T16:48:56Z"
+"evt-00092|37548fa62f92|col-00426","evt-00092","wkstn-002.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T05:29:18Z"
+"evt-00096|ea7176dcff00|col-00426","evt-00096","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T13:43:36Z"
+"evt-00100|684ab7b9d023|col-00426","evt-00100","wkstn-014.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T05:47:41Z"
+"evt-00108|f640c51231fa|col-00426","evt-00108","wkstn-026.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T03:19:22Z"
+"evt-00112|ea7176dcff00|col-00426","evt-00112","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T09:54:45Z"
+"evt-00116|fa4797040a80|col-00426","evt-00116","wkstn-011.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T08:02:25Z"
+"evt-00120|ea7176dcff00|col-00426","evt-00120","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T12:41:48Z"
+"evt-00124|4cfec27ea514|col-00426","evt-00124","wkstn-023.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T21:20:06Z"
+"evt-00128|ea7176dcff00|col-00426","evt-00128","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T15:57:23Z"
+"evt-00132|ed64939b836a|col-00426","evt-00132","wkstn-008.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T03:55:38Z"
+"evt-00136|ea7176dcff00|col-00426","evt-00136","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T13:25:41Z"
+"evt-00140|262d58bd6d00|col-00426","evt-00140","wkstn-020.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T01:57:03Z"
+"evt-00144|ea7176dcff00|col-00426","evt-00144","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T05:51:29Z"
+"evt-00148|09532417d3d6|col-00426","evt-00148","wkstn-005.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T22:23:59Z"
+"evt-00156|493c480c4c90|col-00426","evt-00156","wkstn-017.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T08:06:02Z"
+"evt-00160|ea7176dcff00|col-00426","evt-00160","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T08:15:59Z"
+"evt-00164|37548fa62f92|col-00426","evt-00164","wkstn-002.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T20:56:56Z"
+"evt-00168|ea7176dcff00|col-00426","evt-00168","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T11:06:22Z"
+"evt-00172|684ab7b9d023|col-00426","evt-00172","wkstn-014.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T01:11:45Z"
+"evt-00176|ea7176dcff00|col-00426","evt-00176","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T20:05:09Z"
+"evt-00180|f640c51231fa|col-00426","evt-00180","wkstn-026.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T08:15:34Z"
+"evt-00184|ea7176dcff00|col-00426","evt-00184","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T11:23:25Z"
+"evt-00188|fa4797040a80|col-00426","evt-00188","wkstn-011.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T06:25:42Z"
+"evt-00192|ea7176dcff00|col-00426","evt-00192","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T13:20:22Z"
+"evt-00196|4cfec27ea514|col-00426","evt-00196","wkstn-023.corp.example","Suspicious_PE_Packer",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T02:13:36Z"
+"evt-00200|ea7176dcff00|col-00426","evt-00200","wkstn-024.corp.example","Downloader_Stager_Strings",SUPPRESSED,nvirtanen,"expected on this path, suppression rule raised","2026-06-26T17:02:26Z"
+"evt-00104|ea7176dcff00|col-00426","evt-00104","wkstn-024.corp.example","Downloader_Stager_Strings",TRIAGED,nvirtanen,"expected on this path, suppression rule raised","2026-06-25T19:42:31Z"
+"evt-00001|044b4a10a177|col-00417","evt-00001","srv-lin-01.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00005|51e1402e1b4a|col-00417","evt-00005","srv-lin-05.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00009|be460e24a7be|col-00417","evt-00009","srv-lin-09.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00013|c33dd083ffff|col-00417","evt-00013","srv-lin-13.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00017|ea9e513cec84|col-00417","evt-00017","srv-lin-03.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00021|c6ea010d8dd8|col-00417","evt-00021","srv-lin-07.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00025|3f8c0b1aab4d|col-00417","evt-00025","srv-lin-11.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00029|044b4a10a177|col-00417","evt-00029","srv-lin-01.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00033|51e1402e1b4a|col-00417","evt-00033","srv-lin-05.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00037|be460e24a7be|col-00417","evt-00037","srv-lin-09.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00041|c33dd083ffff|col-00417","evt-00041","srv-lin-13.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00045|ea9e513cec84|col-00417","evt-00045","srv-lin-03.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00049|c6ea010d8dd8|col-00417","evt-00049","srv-lin-07.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00053|3f8c0b1aab4d|col-00417","evt-00053","srv-lin-11.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00057|044b4a10a177|col-00417","evt-00057","srv-lin-01.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00061|51e1402e1b4a|col-00417","evt-00061","srv-lin-05.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00065|be460e24a7be|col-00417","evt-00065","srv-lin-09.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00069|c33dd083ffff|col-00417","evt-00069","srv-lin-13.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00073|ea9e513cec84|col-00417","evt-00073","srv-lin-03.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00077|c6ea010d8dd8|col-00417","evt-00077","srv-lin-07.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00081|3f8c0b1aab4d|col-00417","evt-00081","srv-lin-11.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00085|044b4a10a177|col-00417","evt-00085","srv-lin-01.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00089|51e1402e1b4a|col-00417","evt-00089","srv-lin-05.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00092|c6ea010d8dd8|col-00417","evt-00092","srv-lin-07.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00093|be460e24a7be|col-00417","evt-00093","srv-lin-09.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00097|c33dd083ffff|col-00417","evt-00097","srv-lin-13.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00101|ea9e513cec84|col-00417","evt-00101","srv-lin-03.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00105|c6ea010d8dd8|col-00417","evt-00105","srv-lin-07.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00109|3f8c0b1aab4d|col-00417","evt-00109","srv-lin-11.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00113|044b4a10a177|col-00417","evt-00113","srv-lin-01.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00117|51e1402e1b4a|col-00417","evt-00117","srv-lin-05.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00121|be460e24a7be|col-00417","evt-00121","srv-lin-09.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00125|c33dd083ffff|col-00417","evt-00125","srv-lin-13.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00129|ea9e513cec84|col-00417","evt-00129","srv-lin-03.corp.example",unknown,UNREVIEWED,null,null,null
+"evt-00133|c6ea010d8dd8|col-00417","evt-00133","srv-lin-07.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00137|3f8c0b1aab4d|col-00417","evt-00137","srv-lin-11.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00141|044b4a10a177|col-00417","evt-00141","srv-lin-01.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00145|51e1402e1b4a|col-00417","evt-00145","srv-lin-05.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00149|be460e24a7be|col-00417","evt-00149","srv-lin-09.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00153|c33dd083ffff|col-00417","evt-00153","srv-lin-13.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00157|ea9e513cec84|col-00417","evt-00157","srv-lin-03.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00161|c6ea010d8dd8|col-00417","evt-00161","srv-lin-07.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00165|3f8c0b1aab4d|col-00417","evt-00165","srv-lin-11.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00169|044b4a10a177|col-00417","evt-00169","srv-lin-01.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00173|51e1402e1b4a|col-00417","evt-00173","srv-lin-05.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00177|be460e24a7be|col-00417","evt-00177","srv-lin-09.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00181|c33dd083ffff|col-00417","evt-00181","srv-lin-13.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
+"evt-00185|ea9e513cec84|col-00417","evt-00185","srv-lin-03.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00193|3f8c0b1aab4d|col-00417","evt-00193","srv-lin-11.corp.example","Webshell_PHP_Generic",UNREVIEWED,null,null,null
+"evt-00197|044b4a10a177|col-00417","evt-00197","srv-lin-01.corp.example","High_Entropy_Blob",UNREVIEWED,null,null,null
