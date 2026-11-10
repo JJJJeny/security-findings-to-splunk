@@ -2,8 +2,6 @@
 
 A working prototype that sends findings from Lantern, a fictional forensic collection product, into Splunk, so security analysts can triage them where they already work.
 
-**Walkthrough video (4 min):** https://youtu.be/amAz2nue2Nk
-
 ## Overview
 
 Lantern's users are security analysts who work in their SIEM. A major customer runs Splunk and wants Lantern findings to show up there, so they can triage them alongside everything else. This prototype takes Lantern's export (`events.json`, 200 findings), checks it for data problems, maps each finding to Splunk's Common Information Model (CIM) Malware data model, and sends it to Splunk over the HTTP Event Collector (HEC). Three saved searches then answer the questions an analyst actually asks: what to look at first, what was decided, and how far a threat has spread.
